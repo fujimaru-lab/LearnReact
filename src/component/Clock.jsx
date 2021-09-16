@@ -16,10 +16,23 @@ const Clock = () => {
   const buttonLabel = isLT ? 'Change To UTC' : 'Change To LT';
 
   useEffect(() => {
-    setInterval(() => {
+    const id = setTimeout(() => {
+      console.log('set Timeout');
       setdate(new Date());
     }, 1000);
+    // cleanup関数 setTimeout毎にcleartimeoutを実行。無駄なレンダーをなくす
+    return () => {
+      clearTimeout(id);
+    };
   });
+
+  // const id = setTimeout(() => {
+  //   console.log('set Timeout');
+  //   setdate(new Date());
+  // }, 1000);
+  // clearTimeout(id);
+
+  console.log('render');
 
   const timeString = (date) => {
     if (isLT) {
