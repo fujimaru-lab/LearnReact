@@ -1,0 +1,10 @@
+.clock_wrapper {
+  text-align: center;
+  margin-top: 300px;
+  font-size: 50px;
+}
+
+.change_button {
+  margin-top: 20px;
+  font-size: 20px;
+}

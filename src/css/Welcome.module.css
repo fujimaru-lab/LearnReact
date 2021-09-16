@@ -1,0 +1,28 @@
+.logo {
+  height: 40vmin;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.welcome_wrapper {
+  text-align: center;
+  margin-top: 150px;
+}
+
+.main_text {
+  font-size: 75px;
+  font-style: italic;
+  margin-top: 0px;
+}

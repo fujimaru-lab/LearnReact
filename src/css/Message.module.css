@@ -1,0 +1,17 @@
+.message_wrapper,
+.message_wrapper_dark {
+  text-align: center;
+  margin-top: 300px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.message_wrapper_dark {
+  background-color: rgb(62, 62, 85);
+  color: white;
+}
+
+.color_change_button {
+  margin-top: 30px;
+  font-size: 20px;
+}
