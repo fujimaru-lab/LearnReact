@@ -9,7 +9,7 @@ import css from '../css/Message.module.css';
 const Message = () => {
   const [isDark, setisDark] = useState(false);
 
-  const Msg = message.map(sentence => {
+  const Msg = message.map((sentence, idx) => {
     const msgStyle = {};
     if (sentence.cat === 'en') {
       msgStyle.fontSize = '40px';
@@ -23,7 +23,10 @@ const Message = () => {
 
     return (
       // style属性は実は非推奨
-      <span style={msgStyle}>
+      <span
+        key={`${sentence.cat}_${idx}`}
+        style={msgStyle}
+      >
         { sentence.str }
         <br />
       </span>
